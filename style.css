@@ -1,0 +1,221 @@
+#body {
+  background-color: #0b1e5a;
+  color: white;
+  font-family: "Parkinsans", serif;
+  width: 90%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+.navbar,
+.card {
+  background-color: rgba(0, 0, 139, 0.1);
+  border: 2px solid rgba(0, 0, 139, 0.1);
+  margin: 10px;
+  color: white;
+  border-radius: 12px;
+}
+.nav-link {
+  color: white;
+}
+.title-text {
+  font-size: 45px;
+  font-weight: bold;
+  color: cyan;
+}
+.title-text-links > a {
+  font-size: 25px;
+  margin: 0 10px;
+  color: cyan;
+}
+
+.subrota_image {
+  height: 500px;
+  width: 400px;
+  margin-top: 55px;
+  margin-left: 32%;
+  border-radius: 22px;
+}
+.portfolio-project {
+  border: 2px solid rgba(0, 0, 139, 0.651);
+  border-radius: 11px;
+}
+.portfolio_carousel {
+  border: 2px solid rgba(0, 0, 139, 0.651);
+  border-radius: 11px;
+  padding: 0 20px;
+  width: 100%;
+  margin-top: 38px;
+  margin-bottom: 60px;
+}
+.project_image {
+  height: 700px;
+  width: 580px;
+  border-radius: 10px;
+  margin-top: 50px;
+  margin-left: 3px;
+}
+.tech-names {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tech-names > button {
+  margin: 5px 10px;
+}
+.fa-angles-right,
+.fa-angles-left {
+  color: rgb(24, 217, 224);
+}
+.skills {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.skills > .skill {
+  padding: 5px;
+  background-color: rgba(39, 9, 138, 0.2);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  height: fit-content;
+}
+
+.tools {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.tools > .tool {
+  padding: 5px;
+  background-color: rgba(39, 9, 138, 0.2);
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  height: auto;
+}
+.tools > .tool:hover {
+  background-color: darkblue;
+  cursor: pointer;
+  transition: background-color 1s, cursor 1s;
+}
+
+.skills > .skill:hover {
+  background-color: darkblue;
+  cursor: pointer;
+  transition: background-color 1s, cursor 1s;
+}
+.footer-link {
+  margin-left: 40%;
+}
+.footer-link > ul > li {
+  list-style-type: none;
+  list-style-position: inside;
+}
+.footer-link > ul > li > a {
+  font-size: 40px;
+  color: cyan;
+  margin: 5px 12px;
+}
+
+.comfortable-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navbar-nav>.nav-link:hover{
+    color: cyan;
+}
+.project-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#body::-webkit-scrollbar {
+  width: 15px;
+  background-color: rgba(0, 0, 255, 0.561);
+}
+#body::-webkit-scrollbar-thumb {
+  background-color: rgba(134, 8, 77, 0.621);
+  border-radius: 12px;
+}
+.portfolio_image{
+    height: 54px;
+    width: 54px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 139, 0.478);
+}
+/* responsive design  */
+@media (max-width: 900px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .comfortable-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .project-text{
+    width: 500px;
+  }
+  .basic-info{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  .skills {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tools {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tools > .tool {
+    padding: 20px;
+  }
+  .skills > .skill {
+    padding: 15px;
+    background-color: rgba(39, 9, 138, 0.2);
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin: 10px;
+    height: fit-content;
+    width: 90%;
+  }
+  .tech-names>.skill{
+    width: fit-content;
+    padding: 10px;
+  }
+  .subrota_image {
+    margin-left: 66px;
+    width: 320px;
+  }
+  .project_image {
+    width: 420px;
+  }
+  .footer-link {
+    margin-left: 20%;
+  }
+  .comfortable-div {
+    display: flex;
+    flex-direction: column;
+  }
+  .project-div{
+    display: flex;
+    flex-direction: column;
+  }
+  .project-text{
+    width: 500px;
+  }
+}
